@@ -1,0 +1,68 @@
+Source: pptp
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@pptp.org>
+Uploaders: Holger Schinzel <holger@pptp.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.35),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.35),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.35),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.35),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.35),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.35),
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python
+Standards-Version: 3.9.2
+Homepage: https://github.com/conan-equal-newone/pptp/
+Vcs-Git: git://github.com/conan-equal-newone/pptp.git
+Vcs-Browser: https://github.com/conan-equal-newone/pptp
+
+Package: pptpd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Pptp is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Pptp uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Pptp Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, pptpd, and the CLI tool
+ pptp-cli to interact with the daemon.
+
+Package: pptp-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Pptp is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Pptp uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Pptp Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides Pptp-Qt, a GUI for Pptp based on Qt.
+
+Package: pptp-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Pptp is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Pptp uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Pptp Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides pptp-tx, a command-line transaction creation
+ tool which can be used without a pptp daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

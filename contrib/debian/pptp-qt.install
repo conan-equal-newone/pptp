@@ -1,0 +1,6 @@
+usr/local/bin/pptp-qt usr/bin
+share/pixmaps/pptp32.xpm usr/share/pixmaps
+share/pixmaps/pptp16.xpm usr/share/pixmaps
+share/pixmaps/pptp128.png usr/share/pixmaps
+debian/pptp-qt.desktop usr/share/applications
+debian/pptp-qt.protocol usr/share/kde4/services/

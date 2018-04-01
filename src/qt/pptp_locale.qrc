@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/pptp_bg.qm</file>
+        <file alias="de">locale/pptp_de.qm</file>
+        <file alias="en">locale/pptp_en.qm</file>
+        <file alias="es">locale/pptp_es.qm</file>
+        <file alias="fi">locale/pptp_fi.qm</file>
+        <file alias="fr">locale/pptp_fr.qm</file>
+        <file alias="it">locale/pptp_it.qm</file>
+        <file alias="ja">locale/pptp_ja.qm</file>
+        <file alias="pl">locale/pptp_pl.qm</file>
+        <file alias="pt">locale/pptp_pt.qm</file>
+        <file alias="ru">locale/pptp_ru.qm</file>
+        <file alias="sk">locale/pptp_sk.qm</file>
+        <file alias="sv">locale/pptp_sv.qm</file>
+        <file alias="vi">locale/pptp_vi.qm</file>
+        <file alias="zh_CN">locale/pptp_zh_CN.qm</file>
+        <file alias="zh_TW">locale/pptp_zh_TW.qm</file>
+    </qresource>
+</RCC>

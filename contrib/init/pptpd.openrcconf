@@ -1,0 +1,33 @@
+# /etc/conf.d/pptpd: config file for /etc/init.d/pptpd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/pptpcore/pptp.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/pptpd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/pptpd.pid"
+
+# Where to write pptpd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/pptpd"
+
+# User and group to own pptpd process
+#BITCOIND_USER="pptpcore"
+#BITCOIND_GROUP="pptpcore"
+
+# Path to pptpd executable
+#BITCOIND_BIN="/usr/bin/pptpd"
+
+# Nice value to run pptpd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60
